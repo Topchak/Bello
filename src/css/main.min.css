@@ -1,0 +1,193 @@
+:root {
+  --oranged: #F46752;
+  --font-dark: #1D253C;
+  --font-light: #5A6482;
+  --font-light-blue: #007188;
+  --font-white: #fff;
+  --font-light-gray: #ACB4BF;
+  --bg-light-blue: #E5F3FE;
+  --bg-light: #F9F5F2;
+  --bg--more-ligth: #F8F8F8;
+  --bg-dark: #363839;
+  --card-1-font: #7CAFDD;
+  --card-1-bg: #A9D8FF;
+  --card-2-font: #E79751;
+  --card-2-bg: #FFAE68;
+  --card-3-font: #FA5240
+  --card-3-bg: #FA5240;
+  --card-4-font: #126F85;
+  --card-4-bg: #126F85 ;
+}
+
+main {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+html,
+body {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  font-size: 1rem;
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+
+ul {
+  font-size: 14px;
+  line-height: 16px;
+  list-style: none;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 68px;
+  position: relative;
+  font-weight: 400600;
+  margin-bottom: 1rem;
+  color: var(--font-dark);
+  text-shadow: 0px 0px 3px black;
+}
+
+h2 {
+  font-size: 45px;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 35px;
+}
+
+.image {
+  width: 100%;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto-Regular.woff") format("woff2");
+  font-weight: normal;
+  font-style: 400;
+}
+@font-face {
+  font-family: "WorkSans-Regular";
+  src: url("../../fonts/WorkSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: 400;
+}
+@font-face {
+  font-family: "WorkSans-Light";
+  src: url("../../fonts/WorkSans-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: 300;
+}
+@font-face {
+  font-family: "WorkSans-Medium";
+  src: url("../../fonts/WorkSans-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: 500;
+}
+@font-face {
+  font-family: "WorkSans-SemiBold";
+  src: url("../../fonts/Roboto-SemiBold.woff") format("woff");
+  font-weight: normal;
+  font-style: 600;
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("../../fonts/icomoon.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\e900";
+  color: #5a6482;
+}
+
+.icon-inst:before {
+  content: "\e901";
+  color: #5a6482;
+}
+
+.icon-link:before {
+  content: "\e902";
+  color: #5a6482;
+}
+
+.icon-youtube:before {
+  content: "\e903";
+  color: #5a6482;
+}
+
+.menu__btn {
+  font-weight: 600;
+}
