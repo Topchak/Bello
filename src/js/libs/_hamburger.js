@@ -1,21 +1,21 @@
 
 export default function burger() {
-  const hamburger = document.querySelector('.hamburger');
-  const menuHamburger = document.querySelector('.menu-hamburger');
-  const menuHamburgerItems = document.querySelectorAll('.menu-hamburger__item');
+  const burger = document.querySelector('.burger');
+  const menu = document.querySelector('.menu-burger');
+  const menuItems = document.querySelectorAll('.menu-burger__item');
 
-  hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('open');
-    menuHamburger.classList.toggle('active');
-    menuHamburger.classList.toggle('none')
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('open');
+    menu.classList.toggle('active');
+    menu.classList.toggle('none')
   });
 
-  menuHamburgerItems.forEach(element => {
+  menuItems.forEach(element => {
     element.addEventListener('click', () => {
       
-      hamburger.classList.remove('open');
-      menuHamburger.classList.remove('active');
-      menuHamburger.classList.add('none');
+      burger.classList.remove('open');
+      menu.classList.remove('active');
+      menu.classList.add('none');
 
     });
   });

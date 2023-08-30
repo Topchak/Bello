@@ -2,20 +2,19 @@
   color: var(--font-dark);
   background: #FFF;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.10);
+  padding: 35px 0px;
+
 
   // .header__wrapper
 
   &__wrapper {
-    width: 100%;
-    padding: 35px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  &__item {
+  &__inner {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 0.8rem;
   }
@@ -27,7 +26,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  // width: 100%;
   // .menu__items
 
   &__items {
@@ -59,7 +58,7 @@
     display: none;
   }
 
-  .header__item {
+  .header__inner {
     gap: 0rem;
   }
 }

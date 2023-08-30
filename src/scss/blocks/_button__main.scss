@@ -1,15 +1,25 @@
 .button__main {
+  position: relative;
   display: inline-block;
-  // max-width: 220px;
   border-radius: 4px;
   border: 1px solid rgba(29, 37, 60, 0.20);
   background: #F46752;
 
-  padding: 20px 40px 20px 30px;
+  padding: 20px 60px 20px 30px;
   color: var(--bg-light);
   font-size: 0.55rem;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.button__main::before {
+  position: absolute;
+  content: '';
+  width: 30px;
+  height: 10px;
+  background: url(../img/svg/shape.svg) no-repeat;
+  top: 21px;
+  right: 16px;
 }
 
 .button__main svg {

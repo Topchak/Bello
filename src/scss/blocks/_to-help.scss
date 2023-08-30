@@ -6,7 +6,6 @@
 
   &__wrapper {
     display: flex;
-    padding: 10px;
     align-items: center;
     gap: 3rem;
     width: 100%;
@@ -17,7 +16,9 @@
   &__content {
     width: 50%;
     max-width: 470px;
+    padding: 10px;
   }
+
   &__content a {
     color: #126F86;
   }
@@ -27,11 +28,19 @@
   &__img {
     width: 50%;
     position: relative;
+    max-width: 542px;
+    max-height: 510px;
   }
 
   &__img::before {
     position: absolute;
     content: '';
+    top: -34px;
+    left: -45px;
+    background: url(../img/svg/dots.svg) no-repeat;
+    width: 195px;
+    height: 124px;
+    z-index: -1;
   }
 
   &__subpicture-block {
@@ -39,5 +48,41 @@
     content: '';
     bottom: -11px;
     left: -49px;
+  }
+}
+
+@media (max-width:767px) {
+
+  .to-help {
+    padding: 100px 0;
+  }
+
+  .to-help__wrapper {
+    flex-direction: column;
+  }
+
+  .to-help__content,
+  .to-help__img {
+    width: 100%;
+  }
+
+  .to-help__img {
+    padding: 0px 30px;
+  }
+
+  .to-help__img::before {
+    top: -28px;
+    left: 3px;
+  }
+
+  .to-help__subpicture-block {
+    bottom: -19px;
+    left: -7px;
+  }
+
+}
+@media (max-width:479px){
+  .to-help {
+    padding: 50px 0;
   }
 }
