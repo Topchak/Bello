@@ -1,0 +1,43 @@
+.to-help {
+
+  padding: 150px 0 160px 0;
+  background: var(--white);
+  // .to-help__wrapper
+
+  &__wrapper {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+  }
+
+  // .to-help__content
+
+  &__content {
+    width: 50%;
+    max-width: 470px;
+  }
+  &__content a {
+    color: #126F86;
+  }
+
+  // .to-help__img
+
+  &__img {
+    width: 50%;
+    position: relative;
+  }
+
+  &__img::before {
+    position: absolute;
+    content: '';
+  }
+
+  &__subpicture-block {
+    position: absolute;
+    content: '';
+    bottom: -11px;
+    left: -49px;
+  }
+}

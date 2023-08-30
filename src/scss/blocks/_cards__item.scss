@@ -1,0 +1,9 @@
+.cards__item {
+  font-size: 0.55rem;
+  padding: 40px 5px 30px 20px;
+}
+
+.cards__item:hover {
+  border: 1px solid #000;
+  background: rgba(169, 216, 255, 0.30);
+}

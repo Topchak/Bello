@@ -2,6 +2,34 @@
 @import "./base/reset";
 @import "./base/global";
 @import "./base/fonts";
-@import "./base/fonts-icomoon";
+@import "./base/fonts-icomoon"; 
+@import "./base/_html-MQ"; 
 
-@import "./blocks/menu__btn"
+@import "./blocks/container";
+@import "./blocks/hero__container";
+@import "./blocks/header__container";
+@import "./blocks/header";
+@import "./blocks/logo";
+@import "./blocks/hero__mark";
+@import "./blocks/mark";
+@import "./blocks/mark--light";
+@import "./blocks/button__light";
+@import "./blocks/button__main";
+@import "./blocks/link";
+@import "./blocks/safe-hands__item";
+@import "./blocks/subpicture-block";
+@import "./blocks/cards__item";
+@import "./blocks/button-footer";
+@import "./blocks/hamburger";
+@import "./blocks/menu-hamburger";
+@import "./blocks/logIn";
+@import "./blocks/hide";
+@import "./blocks/none";
+
+
+@import "./blocks/hero";
+@import "./blocks/availability";
+@import "./blocks/to-help";
+
+
+

@@ -1,0 +1,22 @@
+html {
+  font-size: 30px;
+}
+
+@media (max-width:992px) {
+  html {
+    font-size: 26px;
+  }
+}
+
+  @media (max-width:767px) {
+    html {
+      font-size: 26px;
+    }
+
+  }
+
+  @media (max-width:550px) {
+    html {
+      font-size: 22px;
+    }
+  }
