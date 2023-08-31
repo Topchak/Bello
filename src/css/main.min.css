@@ -337,6 +337,20 @@ html {
   line-height: 1.5;
 }
 
+.mark--umbrella {
+  position: relative;
+}
+
+.mark--umbrella::before {
+  background: url(../img/png/umbrella.png);
+  position: absolute;
+  content: "";
+  width: 454px;
+  height: 297px;
+  top: -196px;
+  right: -124px;
+}
+
 .button {
   position: relative;
   display: inline-block;
@@ -408,19 +422,6 @@ html {
 
 .link:hover {
   border-bottom: 1px solid var(--font-light-blue);
-}
-
-.safe-hands__item {
-  max-width: 320px;
-  max-height: 310px;
-  background-color: var(--white);
-  text-align: center;
-  padding-top: 155px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.36rem;
-  line-height: 2.3;
 }
 
 .subpicture-block {
@@ -718,7 +719,7 @@ html {
 
 @media (max-width: 767px) {
   .to-help {
-    padding: 100px 0;
+    padding: 100px 0 150px 0;
   }
   .to-help__wrapper {
     flex-direction: column;
@@ -741,6 +742,76 @@ html {
 }
 @media (max-width: 479px) {
   .to-help {
-    padding: 50px 0;
+    padding: 40px 0 150px 0;
+  }
+}
+.safe-hands {
+  padding: 2.8rem 0;
+  background: var(--bg--more-ligth);
+  text-align: center;
+  position: relative;
+}
+.safe-hands__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+.safe-hands__item {
+  max-width: 320px;
+  max-height: 310px;
+  width: 33%;
+  background-color: var(--white);
+  padding: 155px 35px 40px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 2;
+  background: #FFF;
+  box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.04);
+}
+.safe-hands__item:nth-child(1) {
+  background: url(../img/png/safe-hand-A+.png) center top 70px no-repeat;
+}
+.safe-hands__item:nth-child(2) {
+  background: url(../img/png/safe-hand-family.png) center top 30px no-repeat;
+}
+.safe-hands__item:nth-child(3) {
+  background: url(../img/png/safe-hand-stars.png) center top 44px no-repeat;
+}
+.safe-hands__item-title {
+  color: var(--font-dark);
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.1;
+}
+.safe-hands__item-text {
+  margin-top: 10px;
+  font-size: 0.36rem;
+}
+
+@media (max-width: 767px) {
+  .safe-hands__items {
+    display: flex;
+    flex-direction: column;
+  }
+  .safe-hands__item {
+    width: 100%;
+  }
+}
+.safe-hands::after {
+  position: absolute;
+  content: "";
+  bottom: -30px;
+  right: 0;
+  width: 181px;
+  height: 184px;
+  background: url(../img/png/dog.png) no-repeat;
+  z-index: 0;
+}
+
+@media (max-width: 767px) {
+  .safe-hands::after {
+    display: none;
   }
 }

@@ -1,4 +1,4 @@
-.mark{
+.mark {
   display: inline-block;
   color: var(--oranged);
   font-size: 0.45rem;
@@ -6,7 +6,8 @@
   line-height: 1.2;
   text-transform: uppercase;
 }
-.mark--light{
+
+.mark--light {
   text-transform: none;
   display: inline-block;
   font-size: 0.55rem;
@@ -15,12 +16,27 @@
   color: var(--font-light);
 
 }
-.mark--light span{
+
+.mark--light span {
   color: var(--oranged);
   padding-right: 1px;
 }
 
-.mark--biger{
+.mark--biger {
   font-size: 0.6rem;
   line-height: 1.5;
+}
+
+.mark--umbrella {
+  position: relative;
+}
+
+.mark--umbrella::before {
+  background: url(../img/png/umbrella.png);
+  position: absolute;
+  content: '';
+  width: 454px;
+  height: 297px;
+  top: -196px;
+  right: -124px;
 }
