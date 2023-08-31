@@ -27,8 +27,6 @@
     max-height: 440px;
   }
 
-  // .availability__content
-
   &__content {
     width: 50%;
     padding: 10px;
@@ -40,29 +38,27 @@
     position: relative;
   }
 
-  &__content a svg {
-    position: absolute;
-    top: 3px;
-    right: -33px;
-  }
 }
 
-@media (max-width:767px){
-  .availability__wrapper{
+@media (max-width:767px) {
+  .availability__wrapper {
     display: flex;
     flex-direction: column-reverse;
     gap: 2rem;
   }
-  .availability__content, .availability__img{
+
+  .availability__content,
+  .availability__img {
     width: 100%;
   }
 }
 
-@media (max-width:479px){
-  .availability{
+@media (max-width:479px) {
+  .availability {
     padding: 25px 0;
   }
-  .availability__wrapper{
+
+  .availability__wrapper {
     gap: 1rem;
   }
 }
