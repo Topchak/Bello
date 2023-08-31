@@ -319,10 +319,17 @@ html {
 }
 
 .mark--light {
+  text-transform: none;
   display: inline-block;
   font-size: 0.55rem;
+  font-weight: 400;
   margin-top: 0.66rem;
   color: var(--font-light);
+}
+
+.mark--light span {
+  color: var(--oranged);
+  padding-right: 1px;
 }
 
 .mark--biger {
@@ -621,13 +628,19 @@ html {
   width: 100%;
   height: auto;
   gap: 1rem;
+  min-height: 475px;
+}
+.availability__img-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .availability__img {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 30px 40px;
-  width: 50%;
+  width: 100%;
   background: #FFF;
   box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.04);
   max-width: 500px;
@@ -656,7 +669,7 @@ html {
 }
 @media (max-width: 479px) {
   .availability {
-    padding: 25px 0;
+    padding: 35px 0;
   }
   .availability__wrapper {
     gap: 1rem;
