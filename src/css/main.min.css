@@ -36,6 +36,11 @@ h6 {
   margin: 0;
   font-weight: 600;
   line-height: 1.2;
+  cursor: default;
+}
+
+p {
+  cursor: default;
 }
 
 menu {
@@ -415,7 +420,6 @@ html {
 .link {
   font-size: 0.6rem;
   font-weight: 600;
-  padding-right: 37px;
   background: url(../img/svg/blue-arrow-right.svg) right -2px top 3px no-repeat;
   transition: border-bottom 0.3s ease-in-out;
 }
@@ -425,12 +429,12 @@ html {
 }
 
 .subpicture-block {
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   border-radius: 5px;
   background: #FFF;
   box-shadow: 3px 4px 34px 0px rgba(66, 71, 77, 0.11);
+  font-family: "Roboto", sans-serif;
   padding: 0.3rem 0.5rem;
-  font-family: "Roboto" sans-serif;
   line-height: 1.6;
   color: var(--font-dark);
 }
@@ -761,23 +765,23 @@ html {
   max-width: 320px;
   max-height: 310px;
   width: 33%;
-  background-color: var(--white);
   padding: 155px 35px 40px 35px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   line-height: 2;
-  background: #FFF;
+}
+.safe-hands__item:hover {
   box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.04);
 }
 .safe-hands__item:nth-child(1) {
-  background: url(../img/png/safe-hand-A+.png) center top 70px no-repeat;
+  background: #fff url(../img/png/safe-hand-A+.png) center top 70px no-repeat;
 }
 .safe-hands__item:nth-child(2) {
-  background: url(../img/png/safe-hand-family.png) center top 30px no-repeat;
+  background: #fff url(../img/png/safe-hand-family.png) center top 30px no-repeat;
 }
 .safe-hands__item:nth-child(3) {
-  background: url(../img/png/safe-hand-stars.png) center top 44px no-repeat;
+  background: #fff url(../img/png/safe-hand-stars.png) center top 44px no-repeat;
 }
 .safe-hands__item-title {
   color: var(--font-dark);
@@ -814,4 +818,251 @@ html {
   .safe-hands::after {
     display: none;
   }
+}
+.life-insurance {
+  position: relative;
+  background-color: var(--bg-dark);
+  padding: 120px 0 100px;
+  text-align: center;
+  color: var(--font-light-gray);
+  z-index: 10;
+}
+.life-insurance__wrapper {
+  position: relative;
+}
+.life-insurance__title-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.life-insurance__title {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+.life-insurance__items {
+  margin: 1rem 0 1.8rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  z-index: 10;
+}
+.life-insurance__items::before {
+  content: "";
+  width: 1160px;
+  height: 400px;
+  top: -144px;
+  right: -212px;
+  position: absolute;
+  background: url(../img/svg/Group-2.svg) no-repeat;
+}
+.life-insurance__item {
+  position: relative;
+  width: 33%;
+  padding: 88px 10px 10px 10px;
+  font-weight: 600;
+  position: relative;
+  max-width: 245px;
+}
+.life-insurance__item::before {
+  position: absolute;
+  content: "";
+  top: 20%;
+  right: 52%;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--font-light);
+  transform: translate(50%, -50%);
+  z-index: -1;
+}
+.life-insurance__item:nth-child(1) {
+  background: url(../img/png/life-insurance1.png) center top 10px no-repeat;
+}
+.life-insurance__item:nth-child(2) {
+  background: url(../img/png/life-insurance2.png) center top 10px no-repeat;
+}
+.life-insurance__item:nth-child(3) {
+  background: url(../img/png/life-insurance3.png) center top 10px no-repeat;
+}
+.life-insurance__item-title {
+  font-size: 0.73rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+.life-insurance__item-text {
+  font-size: 0.53rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+@media (max-width: 992px) {
+  .life-insurance__items::before {
+    top: -143px;
+    right: -358px;
+  }
+}
+@media (max-width: 767px) {
+  .life-insurance__items {
+    margin: 1rem 0 1.8rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .life-insurance__items {
+    gap: 1rem;
+  }
+  .life-insurance__items::before {
+    top: 58px;
+    right: -212px;
+    transform: rotate(90deg);
+  }
+  .life-insurance__item {
+    width: 100%;
+    padding: 88px 10px 10px 10px;
+  }
+}
+@media (max-width: 767px) {
+  .life-insurance {
+    padding: 60px 0 60px;
+  }
+}
+.everything {
+  background: var(--bg-light);
+  padding: 148px 0 164px 0;
+}
+.everything__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.8rem;
+}
+.everything__img {
+  max-width: 540px;
+  max-width: 510px;
+  position: relative;
+  width: 50%;
+}
+.everything__subpicture-block {
+  position: absolute;
+  content: "";
+  bottom: -17px;
+  right: 36px;
+}
+.everything__content {
+  max-width: 456px;
+  max-height: 310px;
+  width: 50%;
+}
+.everything__content a {
+  color: #007189;
+}
+
+@media (max-width: 767px) {
+  .everything__wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .everything__content {
+    width: 100%;
+  }
+  .everything__img {
+    width: 100%;
+  }
+}
+@media (max-width: 479px) {
+  .everything {
+    padding: 50px 0 60px 0;
+  }
+}
+.selector-cards {
+  padding: 160px 0 130px 0;
+  background: #fff;
+}
+.selector-cards__wrapper {
+  display: flex;
+  gap: 0.66rem;
+}
+.selector-cards__item {
+  transition: border 0.3s ease-in-out;
+  width: 23%;
+  padding: 40px 5px 33px 22px;
+  min-height: 320px;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.selector-cards__item:nth-child(1) {
+  color: #7CAFDD;
+  background: rgba(169, 216, 255, 0.3);
+}
+.selector-cards__item:nth-child(1) a {
+  color: #7CAFDD;
+}
+.selector-cards__item:nth-child(2) {
+  color: #E79751;
+  background: rgba(255, 174, 104, 0.3);
+}
+.selector-cards__item:nth-child(2) a {
+  color: #E79751;
+}
+.selector-cards__title {
+  font-size: 1.13rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.selector-cards__text {
+  font-size: 0.53rem;
+  color: var(--font-light);
+  display: flex;
+  align-items: center;
+}
+.selector-cards__link {
+  font-size: 0.53rem;
+  font-weight: 600;
+}
+
+.started {
+  text-align: center;
+  background: var(--bg-light-blue);
+  padding: 106px 0 85px 0;
+}
+.started__wrapper {
+  position: relative;
+  z-index: 1;
+}
+.started__wrapper::before {
+  position: absolute;
+  content: "";
+  width: 571px;
+  height: 446px;
+  background: url(../img/png/man-with-umbrella.png) no-repeat;
+  bottom: -85px;
+  left: -6%;
+  z-index: 0;
+}
+.started__wrapper::after {
+  position: absolute;
+  content: "";
+  width: 76px;
+  height: 205px;
+  background: url(../img/png/boy.png) no-repeat;
+  right: 10%;
+  bottom: -85px;
+  z-index: 0;
+}
+.started__title {
+  position: relative;
+  font-weight: 600;
+  z-index: 10;
+}
+.started__description {
+  position: relative;
+  margin-bottom: 1.3rem;
+  z-index: 10;
 }

@@ -1,0 +1,50 @@
+.started {
+  text-align: center;
+  background: var(--bg-light-blue);
+  padding: 106px 0 85px 0;
+
+  // .started__wrapper
+
+  &__wrapper {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__wrapper::before {
+    position: absolute;
+    content: '';
+    width: 571px;
+    height: 446px;
+    background: url(../img/png/man-with-umbrella.png)no-repeat;
+    bottom: -85px;
+    left: -6%;
+    z-index: 0;
+  }
+
+  &__wrapper::after {
+    position: absolute;
+    content: '';
+    width: 76px;
+    height: 205px;
+    background: url(../img/png/boy.png)no-repeat;
+    right: 10%;
+    bottom: -85px;
+    z-index: 0;
+  }
+
+  // .started__title
+
+  &__title {
+    position: relative;
+    font-weight: 600;
+    z-index: 10;
+  }
+
+  // .started__description
+
+  &__description {
+    position: relative;
+    margin-bottom: 1.3rem;
+    z-index: 10;
+  }
+}

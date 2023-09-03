@@ -19,28 +19,27 @@
     max-width: 320px;
     max-height: 310px;
     width: 33%;
-    background-color: var(--white);
     padding: 155px 35px 40px 35px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     line-height: 2.0;
-    background: #FFF;
+  }
+
+  &__item:hover {
     box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.04);
-
-
   }
 
   &__item:nth-child(1) {
-    background: url(../img/png/safe-hand-A+.png) center top 70px no-repeat;
+    background: #fff url(../img/png/safe-hand-A+.png) center top 70px no-repeat;
   }
 
   &__item:nth-child(2) {
-    background: url(../img/png/safe-hand-family.png) center top 30px no-repeat;
+    background: #fff url(../img/png/safe-hand-family.png) center top 30px no-repeat;
   }
 
   &__item:nth-child(3) {
-    background: url(../img/png/safe-hand-stars.png) center top 44px no-repeat;
+    background: #fff url(../img/png/safe-hand-stars.png) center top 44px no-repeat;
   }
 
 
