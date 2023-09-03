@@ -363,6 +363,7 @@ html {
   font-weight: 600;
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
+  z-index: 1000;
 }
 
 .button--orange {
@@ -418,14 +419,30 @@ html {
   }
 }
 .link {
+  position: relative;
   font-size: 0.6rem;
   font-weight: 600;
-  background: url(../img/svg/blue-arrow-right.svg) right -2px top 3px no-repeat;
   transition: border-bottom 0.3s ease-in-out;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  background: url(../img/svg/blue-arrow-right.svg) no-repeat;
+  width: 31px;
+  height: 11px;
+  right: -38px;
+  top: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.link:hover::before {
+  transform: translateX(5px);
 }
 
 .link:hover {
   border-bottom: 1px solid var(--font-light-blue);
+  width: 100%;
 }
 
 .subpicture-block {
@@ -770,6 +787,7 @@ html {
   flex-direction: column;
   justify-content: center;
   line-height: 2;
+  transition: all 0.3s ease-in-out;
 }
 .safe-hands__item:hover {
   box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.04);
@@ -782,6 +800,9 @@ html {
 }
 .safe-hands__item:nth-child(3) {
   background: #fff url(../img/png/safe-hand-stars.png) center top 44px no-repeat;
+}
+.safe-hands__item:hover {
+  transform: translateY(-4px) scale(1.02);
 }
 .safe-hands__item-title {
   color: var(--font-dark);
@@ -811,7 +832,7 @@ html {
   width: 181px;
   height: 184px;
   background: url(../img/png/dog.png) no-repeat;
-  z-index: 0;
+  z-index: 10;
 }
 
 @media (max-width: 767px) {
@@ -825,7 +846,6 @@ html {
   padding: 120px 0 100px;
   text-align: center;
   color: var(--font-light-gray);
-  z-index: 10;
 }
 .life-insurance__wrapper {
   position: relative;
@@ -1065,4 +1085,18 @@ html {
   position: relative;
   margin-bottom: 1.3rem;
   z-index: 10;
+}
+
+@media (max-width: 479px) {
+  .started__wrapper::before {
+    bottom: -85px;
+    left: -160px;
+  }
+  .started__wrapper::after {
+    right: 0;
+    bottom: -85px;
+  }
+  .started__wrapper::before, .started__wrapper::after {
+    opacity: 0.7;
+  }
 }

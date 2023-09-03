@@ -1,11 +1,26 @@
 .link {
+  position: relative;
   font-size: 0.6rem;
   font-weight: 600;
   // padding-right: 37px;
-  background: url(../img/svg/blue-arrow-right.svg) right -2px top 3px no-repeat;
   transition: border-bottom  0.3s ease-in-out;
+}
+.link::before{
+  content: '';
+  position: absolute;
+  background: url(../img/svg/blue-arrow-right.svg)no-repeat;
+  width: 31px;
+  height: 11px;
+  right: -38px;
+  top: 3px;
+  transition: all 0.3s ease-in-out;
+}
+.link:hover::before {
+  transform: translateX(5px);
+  // right: 3px; 
 }
 
 .link:hover {
   border-bottom: 1px solid var(--font-light-blue);
+  width: 100%;
 }

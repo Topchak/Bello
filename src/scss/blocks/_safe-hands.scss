@@ -24,6 +24,7 @@
     flex-direction: column;
     justify-content: center;
     line-height: 2.0;
+    transition: all 0.3s ease-in-out;
   }
 
   &__item:hover {
@@ -40,6 +41,10 @@
 
   &__item:nth-child(3) {
     background: #fff url(../img/png/safe-hand-stars.png) center top 44px no-repeat;
+  }
+  &__item:hover {
+    transform: translateY(-4px) scale(1.02);
+    // transform: scale(1.02);
   }
 
 
@@ -76,7 +81,7 @@
   width: 181px;
   height: 184px;
   background: url(../img/png/dog.png) no-repeat;
-  z-index: 0;
+  z-index: 10;
 }
 
 @media (max-width:767px) {
