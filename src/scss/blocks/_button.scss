@@ -4,11 +4,11 @@
   border-radius: 4px;
   font-weight: 600;
   text-transform: uppercase;
-  transition: all  .3s ease-in-out;
+  transition: all .3s ease-in-out;
   z-index: 1000;
 }
 
-.button--orange{
+.button--orange {
   background: #F46752;
   font-size: 0.55rem;
   color: var(--bg-light);
@@ -16,7 +16,41 @@
   position: relative;
 
 }
-.button--orange:hover{
+
+.button--footer {
+  margin-left: -8px;
+  padding: 23px 37px 23px 17px;
+  border-radius: 0px 5px 5px 0px;
+  background: #126F85;
+  border: none;
+  color: #fff;
+  font-size: 0.45rem;
+  font-weight: 400;
+  text-transform: none;
+}
+.button--footer:hover {
+background-color: #157e95;
+}
+
+.button--footer::before {
+  position: absolute;
+  content: '';
+  width: 22px;
+  height: 22px;
+  background: url(../img/svg/arrow-footer.svg) no-repeat;
+  top: 21px;
+  right: 9px;
+  transition: transform 0.3s ease;
+  transform: translateX(0);
+}
+
+.button--footer:hover::before {
+  transform: translateX(2px);
+}
+
+
+
+.button--orange:hover {
   background: #e25741;
   font-size: 0.55rem;
   color: var(--bg-light);
@@ -40,7 +74,7 @@
 
 .button--orange:not(:hover)::before {
   transition: transform 0.3s ease-in-out;
-  transform: translateX(0px); 
+  transform: translateX(0px);
 }
 
 
@@ -56,8 +90,26 @@
   color: var(--font-light-blue);
 }
 
-@media (max-width:479px){
+@media (max-width:479px) {
   .button--border {
     font-size: 0.45rem;
+  }
+}
+
+@media (max-width:550px) {
+
+  .button--footer {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    padding: 23px 37px 23px 17px;
+
+    &::before {
+      top: 22px;
+      right: 89px;
+    }
   }
 }

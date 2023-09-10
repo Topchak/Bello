@@ -1,0 +1,147 @@
+.footer {
+  padding-top: 70px;
+
+  // .footer__wrapper
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  // .footer__wrapper-inner
+
+  &__form-wrapper {
+    width: 48%;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 40px;
+    max-width: 440px;
+  }
+
+  &__form-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: flex-start;
+    gap: 3.4rem;
+  }
+
+
+  // .footer__menu-title
+
+  &__menu-title {
+    margin-bottom: 22px;
+    color: var(--font-dark);
+    text-transform: uppercase;
+  }
+
+  // .footer__menu-items
+
+  &__menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  // .footer__menu-link
+
+  &__menu-link {
+    color: var(--font-light);
+    transition: .3s ease-in-out;
+  }
+
+  &__menu-link:hover {
+    color: var(--font-light-blue);
+    border-bottom: 1px solid var(--font-light-blue);
+  }
+
+  &__logo {
+    width: 13.5%;
+  }
+
+  &__form-text {
+    margin: 23px 0 20px 0;
+  }
+
+  // .footer__copiright
+
+  &__copiright {
+    padding: 18px 0;
+    background: #F8F8F8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__copiright p {
+    font-size: 0.55rem;
+  }
+}
+
+
+
+
+/* MQ */
+
+@media (max-width:992px) {
+  .footer__menu {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width:767px) {
+  .footer {
+
+    &__wrapper {
+      flex-direction: column-reverse;
+      row-gap: 2rem;
+    }
+  }
+
+  .footer__form-wrapper {
+    width: 100%;
+  }
+
+  .footer__menu {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5rem;
+  }
+
+
+
+  // .footer__menu-link {
+  //   font-size: .6rem;
+  // }
+}
+
+@media (max-width:550px) {
+  .footer__form-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width:479px) {
+  .footer__menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+
+  }
+  .footer__copiright p {
+    font-size: 0.3rem;
+  }
+}
