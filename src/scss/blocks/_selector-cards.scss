@@ -1,73 +1,138 @@
 .selector-cards {
-  padding: 160px 0 130px 0;
-  background: #fff;
-
+  padding: 160px 0 132px 0;
+  background-color: #fff;
   // .selector-cards__wrapper
 
   &__wrapper {
     display: flex;
-    gap: .66rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
   }
 
   // .selector-cards__item
 
   &__item {
-    transition: border .3s ease-in-out;
     width: 23%;
-    padding: 40px 5px 33px 22px;
-    min-height: 320px;
-    flex: 1 1 auto;
+    max-width: 260px;
+    min-height: 325px;
+    padding: 145px 0 35px 22px;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
   &__item:nth-child(1) {
-    color: #7CAFDD;
     background: rgba(169, 216, 255, 0.30);
+    color: #7CAFDD;
 
     & a {
-      color: #7CAFDD
+      color: #7CAFDD;
     }
   }
+
 
   &__item:nth-child(2) {
-    color: #E79751;
     background: rgba(255, 174, 104, 0.30);
+    color: #E79751;
 
     & a {
-      color: #E79751
+      color: #E79751;
     }
   }
 
-  &__item:nth-child(3) {}
+  &__item:nth-child(3) {
+    background: rgba(250, 82, 64, 0.30);
+    color: #FA5240;
+    ;
 
-  &__item:nth-child(4) {}
+    & a {
+      color: #FA5240;
+      ;
+    }
+  }
 
+  &__item:nth-child(4) {
+    background: rgba(18, 111, 133, 0.30);
+    color: #126F85;
 
+    & a {
+      color: #126F85;
+    }
+  }
+
+  // .selector-cards__title
 
   &__title {
-    font-size: 1.13rem;
+    font-size: 1.1rem;
     font-weight: 600;
-    line-height: 1.2;
+    position: absolute;
+    top: 40px;
+    left: 22px;
   }
 
   // .selector-cards__text
 
   &__text {
-    // margin-bottom: 84px;
-    font-size: 0.53rem;
+    font-size: 0.5rem;
     color: var(--font-light);
-    display: flex;
-    align-items: center;
   }
 
   // .selector-cards__link
 
   &__link {
-
-    font-size: 0.53rem;
+    display: inline-block;
+    font-size: 0.55rem;
     font-weight: 600;
-  }
+    position: relative;
 
+    & span {
+      padding-left: 8px;
+    }
+
+    & span img {
+      position: absolute;
+      content: '';
+      top: 3px;
+      width: 41px;
+      height: 16px;
+    }
+  }
+}
+
+@media (max-width:1020px) {
+  .selector-cards {
+    padding: 100px 0 90px 0;
+
+    &__wrapper {
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 51%;
+
+    }
+  }
+}
+
+@media (max-width:550px) {
+  .selector-cards {
+    padding: 80px 0 70px 0;
+
+    &__item {
+      width: 100%;
+    }
+
+    &__title {
+      font-size: 1.3rem;
+    }
+
+    &__text {
+      font-size: 0.6rem;
+    }
+    &__link {
+      font-size: 0.65rem;
+    }
+  }
 }

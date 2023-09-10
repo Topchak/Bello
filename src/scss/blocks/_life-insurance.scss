@@ -57,9 +57,6 @@ position: relative;
     font-weight: 600;
     position: relative;
     max-width: 245px;
-    // z-index: 10;
-
-
   }
 
   &__item::before {
@@ -73,11 +70,13 @@ position: relative;
     background-color: var(--font-light);
     transform: translate(50%, -50%);
     z-index: -1;
+    
   }
 
   &__item:nth-child(1) {
     background: url(../img/png/life-insurance1.png) center top 10px no-repeat;
   }
+
 
   &__item:nth-child(2) {
     background: url(../img/png/life-insurance2.png) center top 10px no-repeat;

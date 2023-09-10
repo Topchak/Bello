@@ -43,6 +43,11 @@
 }
 
 @media (max-width:767px) {
+
+  .everything {
+    padding: 90px 0 90px 0;
+  }
+
   .everything__wrapper {
     display: flex;
     flex-direction: column-reverse;
