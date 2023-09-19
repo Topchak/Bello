@@ -19,3 +19,11 @@
     width: 260px;
   }
 }
+
+@media (max-width:550px) {
+  .input {
+    border-radius: 5px;
+    padding: 0 15px;
+    font-size: 0.7rem;
+  }
+}
