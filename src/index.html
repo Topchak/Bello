@@ -266,8 +266,8 @@
         <img class="logo footer__logo" src="./img/png/logo-bello.png" alt="logo">
         <p class="footer__form-text">Bello is a trading name of Bello Insurance Services LLC. Bello policies are
           issued by [Insert Underwriter here].</p>
-        <form class="footer__form-form">
-          <input class="input" type="email" placeholder="Enter email">
+        <form data-form action="#" method="post" class="footer__form-form">
+          <input class="input" name="email" type="email" placeholder="Enter email">
           <button class="button button--footer footer__button">Go</button>
         </form>
         <div class="social">
@@ -326,35 +326,21 @@
     </div>
   </footer>
 
-  <div class="modal-price hide">
-    <div class="modal-price__wrapper">
-      <div class="modal-price-close">x</div>
-      <p class="modal-price__title">OUR PRICE</p>
-      <ul class="modal-price__items">
-        <li class="modal-price__item">
-          <p class="modal-price__item-title">first offer</p>
-          <p class="modal-price__item-text">cheap offer</p>
-          <span class="modal-price__item-price"><span>10</span>$</span>
-          <button data-help class="button--modal button--modal-price">get help</button>
-        </li>
-
-        <li class="modal-price__item">
-          <p class="modal-price__item-title">second offer</p>
-          <p class="modal-price__item-text">middle offer</p>
-          <span class="modal-price__item-price"><span>30</span>$</span>
-          <button data-help class="button--modal button--modal-price">get help</button>
-        </li>
-
-        <li class="modal-price__item">
-          <p class="modal-price__item-title">third offer</p>
-          <p class="modal-price__item-text">expensive offer</p>
-          <span class="modal-price__item-price"><span>50</span>$</span>
-          <button data-help class="button--modal button--modal-price">get help</button>
-        </li>
-
-      </ul>
+  <div class="modal hide">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <form action="#" data-form method="post">
+          <div data-close class="modal__close">&times;</div>
+          <div class="modal__title">WE'LL CONTACT YOU AS SOON AS POSSIBLE!</div>
+          <input data-input-name required placeholder="Enter name" name="name" type="text" class="modal__input">
+          <input data-input-phone required placeholder="Enter phone number" name="phone" type="phone"
+            class="modal__input">
+          <button class="button button--border button--form" type="submit">call back</button>
+        </form>
+      </div>
     </div>
   </div>
+
 
 
   <script src="./js/bundle.js"></script>

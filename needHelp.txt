@@ -1,2 +1,3 @@
 life-insurance > background img
-selector__cards arrow
+selector__cards arrows
+if I want to change folder my project, what is GIT?
