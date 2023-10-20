@@ -1,0 +1,1 @@
+{"version":3,"file":"./src/js/bundle.js","mappings":"mBAKAA,SACAC,Y","sources":["webpack://bello/./src/js/script.js"],"sourcesContent":["'use strict';\r\n\r\n// import burger from './libs/_hamburger.js';\r\n// import footerForm from './libs/_footer-form.js';\r\n\r\nburger();\r\nfooterForm();"],"names":["burger","footerForm"],"sourceRoot":""}

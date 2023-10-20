@@ -5,6 +5,7 @@
 }
 
 .social span {
+  cursor: pointer;
   transition: transform .3s ease-in-out;
 
   &:hover {

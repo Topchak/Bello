@@ -28,8 +28,13 @@
   font-weight: 400;
   text-transform: none;
 }
+
 .button--footer:hover {
-background-color: #157e95;
+  background-color: #157e95;
+}
+
+.button--footer:active {
+  background-color: #1c6676;
 }
 
 .button--footer::before {
@@ -89,6 +94,27 @@ background-color: #157e95;
   border: 1px solid var(--font-light-blue);
   color: var(--font-light-blue);
 }
+
+.button--modal {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0.43rem 1rem;
+  border: 1px solid rgba(29, 37, 60, 0.20);
+  border-radius: 4px;
+  color: var(--font-dark);
+  background: inherit;
+  font-size: 0.45rem;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.button--modal:hover {
+  border: 1px solid var(--font-light-blue);
+  color: var(--font-light-blue);
+}
+
+
+// .button--modal-price {}
 
 @media (max-width:479px) {
   .button--border {

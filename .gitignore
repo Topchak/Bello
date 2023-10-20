@@ -1,0 +1,24 @@
+# dependencies
+node_modules/
+vendor/
+/.php
+.php.js
+
+# testing 
+/coverage
+
+# production 
+/build
+/dist/
+
+# logs 
+*.log
+npm-debug.log*
+debug.log
+logs
+
+# configurations
+
+.env
+.env.local
+.env.*.local

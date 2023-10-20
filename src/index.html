@@ -41,7 +41,7 @@
           <div class="header__log logIn">
             <a href="#">Log in</a>
           </div>
-          <a href="#" class=" button button--border">Get my price</a>
+          <a data-getPrice href="#" class=" button button--border">Get my price</a>
         </div>
       </div>
     </div>
@@ -76,15 +76,15 @@
     </div>
   </header>
 
-  <!-- <main class="main">
-    <section class="hero__section">
+  <main class="main">
+    <section class="hero">
       <div class="container container--hero">
         <div class="hero__wrapper">
           <div class="hero__content">
             <div class="mark mark--hero">MEET BELLO</div>
             <h1>A New Kind Of Life Insurance</h1>
             <p class="hero__description">Secure your family's financial future, in as little as 10 minutes.</p>
-            <a class="button button--orange">get my price
+            <a data-getPrice class="button button--orange">get my price
             </a>
           </div>
         </div>
@@ -108,7 +108,7 @@
               Life insurance shouldn’t be confusing or expensive. Bello’s term life insurance makes protecting your
               loved ones easy and affordable.
             </p>
-            <a href="#" class="link">Get My Price
+            <a href="#" data-getPrice class="link">Get My Price
             </a>
           </div>
         </div>
@@ -192,7 +192,7 @@
               <p class="life-insurance__item-text">Congratulations on securing your loved ones financial future!</p>
             </div>
           </div>
-          <a href="#" class="button button--orange">get my price</a>
+          <a href="#" data-getPrice class="button button--orange">get my price</a>
         </div>
       </div>
     </section>
@@ -254,130 +254,110 @@
           <h2 class="started__title">Get Started Today.</h2>
           <p class="started__description description">Join the Bello community of people who are securing their
             financial future.</p>
-          <a href="#" class="button button--orange">get my price</a>
+          <a href="#" data-getPrice class="button button--orange">get my price</a>
         </div>
       </div>
     </section>
-  </main> -->
-
-  <!-- <footer class="footer">
-    <div class="container">
-      <div class="footer__wrapper">
-        <div class="footer__form-wrapper footer__form">
-          <img class="logo footer__logo" src="./img/png/logo-bello.png" alt="logo">
-          <p class="footer__form-text">Bello is a trading name of Bello Insurance Services LLC. Bello policies are
-            issued by [Insert Underwriter here].</p>
-          <form class="footer__form-form">
-            <input class="input" type="text" name="input">
-            <button class="button button--footer footer__button">Go</button>
-          </form>
-          <div class="social"> 
-            <span class="icon-facebook"></span>
-            <span class="icon-inst"></span>
-            <span class="icon-link"></span>
-            <span class="icon-youtube"></span>
-          </div>
-        </div>
-        <div class="footer__menu-wrapper footer__menu">
-          <div class="footer__menu-inner">
-            <p class="footer__menu-title">Resources</p>
-            <ul class="footer__menu-items">
-              <li><a href="#" class="footer__menu-link">Term life insurance plans</a></li>
-              <li><a href="#" class="footer__menu-link">Insurance calculator</a></li>
-              <li><a href="#" class="footer__menu-link">Guide to life insurance</a></li>
-              <li><a href="#" class="footer__menu-link">Contact</a></li>
-              <li><a href="#" class="footer__menu-link">FAQs</a></li>
-            </ul>
-          </div>
-          <div class="footer__menu-inner">
-            <p class="footer__menu-title">Magazine</p>
-            <ul class="footer__menu-items">
-              <li><a href="#" class="footer__menu-link">Insurance</a></li>
-              <li><a href="#" class="footer__menu-link">Finances</a></li>
-              <li><a href="#" class="footer__menu-link">Health</a></li>
-              <li><a href="#" class="footer__menu-link">Updates</a></li>
-            </ul>
-          </div>
-          <div class="footer__menu-inner">
-            <p class="footer__menu-title">More</p>
-            <ul class="footer__menu-items">
-              <li><a href="#" class="footer__menu-link">Claims</a></li>
-              <li><a href="#" class="footer__menu-link">Terms</a></li>
-              <li><a href="#" class="footer__menu-link">Privacy</a></li>
-              <li><a href="#" class="footer__menu-link">Licenses</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer__copiright">
-        <p>© 2020 Bello insurance Services LLC. All right reserved.</p>
-        <a href="" class="button button--border">Get my price</a>
-      </div>
-    </div>
-  </footer> -->
-
+  </main>
 
   <footer class="footer">
-    <!-- <div class="container"> -->
-      <div class="footer__wrapper">
-        <div class="footer__form-wrapper footer__form">
-          <img class="logo footer__logo" src="./img/png/logo-bello.png" alt="logo">
-          <p class="footer__form-text">Bello is a trading name of Bello Insurance Services LLC. Bello policies are
-            issued by [Insert Underwriter here].</p>
-          <form class="footer__form-form">
-            <input class="input" type="text" name="input">
-            <button class="button button--footer footer__button">Go</button>
-          </form>
-          <div class="social"> 
+    <div class="footer__wrapper">
+      <div class="footer__form-wrapper footer__form">
+        <img class="logo footer__logo" src="./img/png/logo-bello.png" alt="logo">
+        <p class="footer__form-text">Bello is a trading name of Bello Insurance Services LLC. Bello policies are
+          issued by [Insert Underwriter here].</p>
+        <form class="footer__form-form">
+          <input class="input" type="email" placeholder="Enter email">
+          <button class="button button--footer footer__button">Go</button>
+        </form>
+        <div class="social">
+          <a href="https://www.facebook.com/" target="_blank">
             <span class="icon-facebook"></span>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
             <span class="icon-inst"></span>
+          </a>
+          <a href="https://ua.linkedin.com/" target="_blank">
             <span class="icon-link"></span>
-            <span class="icon-youtube"></span>
-          </div>
-        </div>
-        <div class="footer__menu-wrapper footer__menu">
-          <div class="footer__menu-inner">
-            <p class="footer__menu-title">Resources</p>
-            <ul class="footer__menu-items">
-              <li><a href="#" class="footer__menu-link">Term life insurance plans</a></li>
-              <li><a href="#" class="footer__menu-link">Insurance calculator</a></li>
-              <li><a href="#" class="footer__menu-link">Guide to life insurance</a></li>
-              <li><a href="#" class="footer__menu-link">Contact</a></li>
-              <li><a href="#" class="footer__menu-link">FAQs</a></li>
-            </ul>
-          </div>
-          <div class="footer__menu-inner">
-            <p class="footer__menu-title">Magazine</p>
-            <ul class="footer__menu-items">
-              <li><a href="#" class="footer__menu-link">Insurance</a></li>
-              <li><a href="#" class="footer__menu-link">Finances</a></li>
-              <li><a href="#" class="footer__menu-link">Health</a></li>
-              <li><a href="#" class="footer__menu-link">Updates</a></li>
-            </ul>
-          </div>
-          <div class="footer__menu-inner">
-            <p class="footer__menu-title">More</p>
-            <ul class="footer__menu-items">
-              <li><a href="#" class="footer__menu-link">Claims</a></li>
-              <li><a href="#" class="footer__menu-link">Terms</a></li>
-              <li><a href="#" class="footer__menu-link">Privacy</a></li>
-              <li><a href="#" class="footer__menu-link">Licenses</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer__copiright">
-        <div class="footer__copiright-wrapper">
-          <p>© 2020 Bello insurance Services LLC. All right reserved.</p>
-          <a href="" class="button button--border">Get my price</a>
-        </div>
+          </a>
 
+          <a href="https://www.youtube.com/" target="_blank">
+            <span class="icon-youtube"></span>
+          </a>
+        </div>
       </div>
-    <!-- </div> -->
+      <div class="footer__menu-wrapper footer__menu">
+        <div class="footer__menu-inner">
+          <p class="footer__menu-title">Resources</p>
+          <ul class="footer__menu-items">
+            <li><a href="#" class="footer__menu-link">Term life insurance plans</a></li>
+            <li><a href="#" class="footer__menu-link">Insurance calculator</a></li>
+            <li><a href="#" class="footer__menu-link">Guide to life insurance</a></li>
+            <li><a href="#" class="footer__menu-link">Contact</a></li>
+            <li><a href="#" class="footer__menu-link">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer__menu-inner">
+          <p class="footer__menu-title">Magazine</p>
+          <ul class="footer__menu-items">
+            <li><a href="#" class="footer__menu-link">Insurance</a></li>
+            <li><a href="#" class="footer__menu-link">Finances</a></li>
+            <li><a href="#" class="footer__menu-link">Health</a></li>
+            <li><a href="#" class="footer__menu-link">Updates</a></li>
+          </ul>
+        </div>
+        <div class="footer__menu-inner">
+          <p class="footer__menu-title">More</p>
+          <ul class="footer__menu-items">
+            <li><a href="#" class="footer__menu-link">Claims</a></li>
+            <li><a href="#" class="footer__menu-link">Terms</a></li>
+            <li><a href="#" class="footer__menu-link">Privacy</a></li>
+            <li><a href="#" class="footer__menu-link">Licenses</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__copiright">
+      <div class="footer__copiright-wrapper">
+        <p>© 2020 Bello insurance Services LLC. All right reserved.</p>
+        <a href="#" data-getPrice class="button button--border">Get my price</a>
+      </div>
+
+    </div>
   </footer>
 
+  <div class="modal-price hide">
+    <div class="modal-price__wrapper">
+      <div class="modal-price-close">x</div>
+      <p class="modal-price__title">OUR PRICE</p>
+      <ul class="modal-price__items">
+        <li class="modal-price__item">
+          <p class="modal-price__item-title">first offer</p>
+          <p class="modal-price__item-text">cheap offer</p>
+          <span class="modal-price__item-price"><span>10</span>$</span>
+          <button data-help class="button--modal button--modal-price">get help</button>
+        </li>
 
-  <script type="module" src="./js/index.js"></script>
+        <li class="modal-price__item">
+          <p class="modal-price__item-title">second offer</p>
+          <p class="modal-price__item-text">middle offer</p>
+          <span class="modal-price__item-price"><span>30</span>$</span>
+          <button data-help class="button--modal button--modal-price">get help</button>
+        </li>
+
+        <li class="modal-price__item">
+          <p class="modal-price__item-title">third offer</p>
+          <p class="modal-price__item-text">expensive offer</p>
+          <span class="modal-price__item-price"><span>50</span>$</span>
+          <button data-help class="button--modal button--modal-price">get help</button>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+
+
+  <script src="./js/bundle.js"></script>
 
 </body>
 
