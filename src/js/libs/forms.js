@@ -18,10 +18,15 @@ export default function forms(formSelector) {
   forms.forEach(form => {
     bindPostData(form);
   });
+  
+
 
   function bindPostData(form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
+
+      const formInputs = document.querySelectorAll('.modal__input');
+      console.log(formInputs);
 
       let statusMessage = document.createElement('img');
       statusMessage.src = message.loading;

@@ -6,6 +6,8 @@ import forms from './libs/forms';
 import {
   modalGetPrice
 } from './libs/_modal';
+import checkInputs from './libs/_inputs';
+
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -13,5 +15,6 @@ window.addEventListener('DOMContentLoaded', () => {
   heroAnimation();
   forms('form');
   modalGetPrice();
+  checkInputs();
 
 });
