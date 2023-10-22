@@ -1,0 +1,56 @@
+.mySlider {
+
+  // .mySlider__wrapper
+
+  &__wrapper {
+    position: relative;
+
+  }
+
+  &__arrows {
+    display: flex;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    gap: 1rem;
+  }
+
+  &__prev-arrow,
+  &__next-arrow {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all .3s ease;
+
+    &:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    &:active {
+      transform: scale(0.95);
+      background-color: #145b9b;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+
+  &__inner {
+    display: flex;
+    margin-right: auto;
+  }
+
+  &__TextContent {
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    text-align: center;
+    max-width: 450px;
+  }
+
+  // .mySlider__img
+
+  &__img {
+    width: 600px;
+    height: 600px;
+  }
+}
