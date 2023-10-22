@@ -7,7 +7,7 @@ export default function burger() {
   burger.addEventListener('click', () => {
     burger.classList.toggle('open');
     menu.classList.toggle('active');
-    menu.classList.toggle('none')
+    menu.classList.toggle('none');
   });
 
   menuItems.forEach(element => {

@@ -7,6 +7,7 @@ import {
   modalGetPrice
 } from './libs/_modal';
 import checkInputs from './libs/_inputs';
+import cards from './libs/_cards';
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -16,5 +17,8 @@ window.addEventListener('DOMContentLoaded', () => {
   forms('form');
   modalGetPrice();
   checkInputs();
+  cards();
+
+
 
 });
