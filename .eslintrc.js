@@ -20,17 +20,17 @@ module.exports = {
     'sourceType': 'module'
   },
   'rules': {
-    'import/newline-after-import': ['off'],
+    'no-unused-vars': 'warn',
     'linebreak-style': [
       'error',
       'windows'
     ],
     'quotes': [
-      'error',
+      'warn',
       'single'
     ],
     'semi': [
-      'error',
+      'warn',
       'always'
     ],
     'import/newline-after-import': [

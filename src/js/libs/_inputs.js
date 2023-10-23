@@ -1,4 +1,4 @@
-import createError from './createError';
+import createError from './_createError';
 
 export default function checkInputs() {
   const formInputs = document.querySelectorAll('.modal__input');

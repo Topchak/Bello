@@ -26,13 +26,13 @@
           <menu class="menu">
             <ul class="menu__items">
               <li class="menu__item">
-                <a href="#" class="menu__link">Life insurance</a>
+                <a href="#life-insurance" class="menu__link">Life insurance</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Why Bello</a>
+                <a href="#safe-hands" class="menu__link">Why Bello</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Help</a>
+                <a href="#footer" class="menu__link">Help</a>
               </li>
             </ul>
           </menu>
@@ -75,36 +75,8 @@
       </div>
     </div>
   </header>
+  <main class="main">
 
-  <main>
-    <section class="mySlider">
-      <div class="container">
-        <div class="mySlider__wrapper">
-          <div class="mySlider__arrows">
-            <div class="mySlider__prev-arrow">
-              <img src="../src/img/slider/prev.png" alt="prev-arrow">
-            </div>
-            <div class="mySlider__next-arrow">
-              <img src="../src/img/slider/next.png" alt="next-arrow">
-            </div>
-          </div>
-          <div class="mySlider__inner">
-            <img src="../src/img/slider/1.jpg" alt="people" class="mySlider__img">
-            <img src="../src/img/slider/2.jpg" alt="people" class="mySlider__img">
-            <img src="../src/img/slider/3.jpg" alt="people" class="mySlider__img">
-            <img src="../src/img/slider/4.jpg" alt="people" class="mySlider__img">
-            <img src="../src/img/slider/5.jpg" alt="people" class="mySlider__img">
-          </div>
-          <div class="mySlider__TextContent">
-          <h2 class="mySlider__title">Title</h2>
-          <p class="mySlider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, repellendus.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- <main class="main">
     <section class="hero">
       <div class="container container--hero">
         <div class="hero__wrapper">
@@ -143,6 +115,32 @@
       </div>
     </div>
 
+    <section class="mySlider">
+      <div class="container">
+        <div class="mySlider__wrapper">
+          <div class="mySlider__arrows">
+            <div class="mySlider__prev-arrow">
+              <img src="../src/img/slider/prev.png" alt="prev-arrow">
+            </div>
+            <div class="mySlider__next-arrow">
+              <img src="../src/img/slider/next.png" alt="next-arrow">
+            </div>
+          </div>
+          <div class="mySlider__inner">
+            <img src="../src/img/slider/1.jpg" alt="people" class="mySlider__img">
+            <img src="../src/img/slider/2.jpg" alt="people" class="mySlider__img">
+            <img src="../src/img/slider/3.jpg" alt="people" class="mySlider__img">
+            <img src="../src/img/slider/4.jpg" alt="people" class="mySlider__img">
+            <img src="../src/img/slider/5.jpg" alt="people" class="mySlider__img">
+          </div>
+          <div class="mySlider__TextContent">
+            <h2 class="mySlider__title">Simple slider</h2>
+            <p class="mySlider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, repellendus.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="to-help">
       <div class="container">
         <div class="to-help__wrapper">
@@ -161,7 +159,10 @@
         </div>
       </div>
     </section>
-    <section class="safe-hands">
+
+
+
+    <section id="safe-hands" class="safe-hands">
       <div class="container">
         <p class="mark mark--umbrella">Top-Rated Term Life Insurance</p>
         <h2>You’re in safe hands</h2>
@@ -196,7 +197,35 @@
           </div>
         </div>
     </section>
-    <section class="life-insurance">
+
+    <section class="newSlider">
+      <div class="container">
+        <div class="newSlider__wrapper">
+          <div class="newSlider__counter">
+            <div class="newSlider__current" id="current">2</div>
+            <span>/</span>
+            <div class="newSlider__total" id="total">8</div>
+          </div>
+          <div class="newSlider__arrows">
+            <div class="newSlider__prev-arrow">
+              <img src="../src/img/slider/prev.png" alt="prev-arrow">
+            </div>
+            <div class="newSlider__next-arrow">
+              <img src="../src/img/slider/next.png" alt="next-arrow">
+            </div>
+          </div>
+          <div class="newSlider__inner">
+            <img src="../src/img/slider/1.jpg" alt="people" class="newSlider__img">
+            <img src="../src/img/slider/2.jpg" alt="people" class="newSlider__img">
+            <img src="../src/img/slider/3.jpg" alt="people" class="newSlider__img">
+            <img src="../src/img/slider/4.jpg" alt="people" class="newSlider__img">
+            <img src="../src/img/slider/5.jpg" alt="people" class="newSlider__img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="life-insurance" class="life-insurance">
       <div class="container">
         <div class="life-insurance__wrapper">
           <p class="mark">How it works</p>
@@ -261,16 +290,16 @@
         </div>
       </div>
     </section>
-  </main> -->
+  </main>
 
-  <!-- <footer class="footer">
+  <footer id="footer" class="footer">
     <div class="footer__wrapper">
       <div class="footer__form-wrapper footer__form">
         <img class="logo footer__logo" src="./img/png/logo-bello.png" alt="logo">
         <p class="footer__form-text">Bello is a trading name of Bello Insurance Services LLC. Bello policies are
           issued by [Insert Underwriter here].</p>
         <form data-form action="#" method="post" class="footer__form-form">
-          <input class="input" name="email"  placeholder="Enter email">
+          <input class="input" name="email" placeholder="Enter email">
           <button class="button button--footer footer__button">Go</button>
         </form>
         <div class="social">
@@ -327,7 +356,7 @@
       </div>
 
     </div>
-  </footer> -->
+  </footer>
 
   <div class="modal hide">
     <div class="modal__dialog">

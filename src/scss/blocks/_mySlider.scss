@@ -11,8 +11,9 @@
     display: flex;
     position: absolute;
     top: 1rem;
-    right: 1rem;
+    right: 6rem;
     gap: 1rem;
+    z-index: 100;
   }
 
   &__prev-arrow,
@@ -36,7 +37,7 @@
 
   &__inner {
     display: flex;
-    margin-right: auto;
+
   }
 
   &__TextContent {
@@ -50,7 +51,27 @@
   // .mySlider__img
 
   &__img {
-    width: 600px;
-    height: 600px;
+    max-width: 600px;
+    max-height: 600px;
+  }
+}
+
+@media (max-width:1070px) {
+  .mySlider {
+
+  }
+
+}
+
+@media (max-width:767px) {
+  .mySlider {
+    
+  }
+
+}
+
+@media (max-width:479px) {
+  .mySlider {
+    
   }
 }
