@@ -18,4 +18,4 @@ json-server db.json
 
 
 Репозиторий на GitHub
-https://github.com/Topchak/Bello-lendin
+https://github.com/Topchak/Bello-lending
